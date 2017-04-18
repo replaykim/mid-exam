@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="userDao" class="kr.ac.jejunu.UserDao">
-        <property name="dataSource" ref="dataSource"></property>
+        <property name="jdbcContext" ref="jdbcContext"></property>
     </bean>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
@@ -12,5 +12,9 @@
         <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
         <property name="username" value="root"></property>
         <property name="password" value="1234"></property>
+    </bean>
+
+    <bean id="jdbcContext" class="kr.ac.jejunu.JdbcContext">
+        <property name="dataSource" ref="dataSource"></property>
     </bean>
 </beans>
