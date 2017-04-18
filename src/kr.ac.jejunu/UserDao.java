@@ -14,10 +14,15 @@ import java.sql.*;
  * extract method
  */
 
-public abstract class UserDao {
+public class UserDao {
+    public UserDao(ConnectionMaker connectionMaker) {
+        this.connectionMaker = connectionMaker;
+    }
+
+    ConnectionMaker connectionMaker;
 
     public User get(Long id) throws ClassNotFoundException, SQLException {
-        Connection connection = getConnection();
+        Connection connection = connectionMaker.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement("select * from userdata where id = ?");
         preparedStatement.setLong(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -35,7 +40,7 @@ public abstract class UserDao {
     }
 
     public void add(User user) throws ClassNotFoundException, SQLException {
-        Connection connection = getConnection();
+        Connection connection = connectionMaker.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO userdata VALUES (?,?,?)");
         preparedStatement.setLong(1, user.getId());
         preparedStatement.setString(2, user.getName());
@@ -46,5 +51,4 @@ public abstract class UserDao {
         connection.close();
     }
 
-    abstract Connection getConnection() throws ClassNotFoundException, SQLException;
 }

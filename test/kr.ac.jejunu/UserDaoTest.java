@@ -22,7 +22,7 @@ public class UserDaoTest {
         String name  = "김재현";
         String password = "12334";
 
-        UserDao userDao = new JejuUserDao();
+        UserDao userDao = new UserDao(new JejuConnectionMaker());
 
         User user = userDao.get(id);
 
@@ -42,7 +42,7 @@ public class UserDaoTest {
         user.setId(id);
         user.setPassword(password);
 
-        UserDao userDao = new JejuUserDao();
+        UserDao userDao = new UserDao(new JejuConnectionMaker());
         userDao.add(user);
 
         User resultUser = userDao.get(id);
@@ -60,7 +60,7 @@ public class UserDaoTest {
         String name  = "김재현";
         String password = "12334";
 
-        UserDao userDao = new HallaUserDao();
+        UserDao userDao = new UserDao(new HallaConnectionMaker());
 
         User user = userDao.get(id);
 
@@ -80,7 +80,7 @@ public class UserDaoTest {
         user.setId(id);
         user.setPassword(password);
 
-        UserDao userDao = new HallaUserDao();
+        UserDao userDao = new UserDao(new HallaConnectionMaker());
         userDao.add(user);
 
         User resultUser = userDao.get(id);
