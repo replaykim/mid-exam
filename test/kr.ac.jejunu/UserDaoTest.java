@@ -59,4 +59,23 @@ public class UserDaoTest {
         assertThat(name, is(resultUser.getName()));
         assertThat(password, is(resultUser.getPassword()));
     }
+
+    @Test
+    public void delete() throws SQLException, ClassNotFoundException {
+        Long id = 6l;
+        String name  = "삭제";
+        String password = "1234";
+
+        User user = new User();
+        user.setName(name);
+        user.setId(id);
+        user.setPassword(password);
+
+        userDao.add(user);
+        userDao.delete(id);
+
+        User resultUser = userDao.get(id);
+
+        assertThat(resultUser, nullValue());
+    }
 }

@@ -100,8 +100,39 @@ public class UserDao {
         }
     }
 
+    public void delete(Long id) throws SQLException {
+        PreparedStatement preparedStatement = null;
+        Connection connection = null;
+        try {
+            connection = dataSource.getConnection();
+
+            preparedStatement = connection.prepareStatement("DELETE FROM userdata WHERE id = ?");
+            preparedStatement.setLong(1, id);
+
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw e;
+        } finally
+         {
+            if (preparedStatement != null) {
+                try {
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-
 }
