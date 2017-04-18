@@ -16,10 +16,6 @@ import java.sql.*;
 
 public class UserDao {
 
-    public UserDao(ConnectionMaker connectionMaker) {
-        this.connectionMaker = connectionMaker;
-    }
-
     ConnectionMaker connectionMaker;
 
     public User get(Long id) throws ClassNotFoundException, SQLException {
@@ -50,6 +46,10 @@ public class UserDao {
 
         preparedStatement.close();
         connection.close();
+    }
+
+    public void setConnectionMaker(ConnectionMaker connectionMaker) {
+        this.connectionMaker = connectionMaker;
     }
 
 }
