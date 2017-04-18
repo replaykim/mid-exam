@@ -1,6 +1,8 @@
 package kr.ac.jejunu;
 
-import javax.sql.DataSource;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+
 import java.sql.*;
 
 /**
@@ -17,36 +19,42 @@ import java.sql.*;
 
 public class UserDao {
 
-    JdbcContext jdbcContext;
+    JdbcTemplate jdbcTemplate;
 
     public User get(Long id) throws ClassNotFoundException, SQLException {
         String sql = "select * from userdata where id = ?";
         Object[] params = new Object[]{id};
+        User user1 = null;
+        try {
+            user1 =  jdbcTemplate.queryForObject(sql, params, (resultSet, i) -> {
+                User user = new User();
+                user.setId(resultSet.getLong("id"));
+                user.setName(resultSet.getString("name"));
+                user.setPassword(resultSet.getString("password"));
 
-        return jdbcContext.queryForObject(sql, params);
+                return user;
+            });
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+        }
+
+        return user1;
     }
-
-
-
 
     public void add(User user) throws ClassNotFoundException, SQLException {
         String sql = "INSERT INTO userdata VALUES (?,?,?)";
         Object[] params = new Object[]{user.getId(), user.getName(), user.getPassword()};
-
-        jdbcContext.update(sql, params);
+        jdbcTemplate.update(sql, params);
     }
 
 
     public void delete(Long id) throws SQLException {
         String sql = "DELETE FROM userdata WHERE id = ?";
         Object[] params = new Object[]{id};
-
-        jdbcContext.update(sql, params);
+        jdbcTemplate.update(sql, params);
     }
 
-
-
-    public void setJdbcContext(JdbcContext jdbcContext) {
-        this.jdbcContext = jdbcContext;
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
     }
 }

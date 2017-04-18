@@ -42,7 +42,7 @@ public class UserDaoTest {
 
     @Test
     public void add() throws SQLException, ClassNotFoundException {
-        Long id = 5l;
+        Long id = 12l;
         String name  = "더하기";
         String password = "1234";
 
