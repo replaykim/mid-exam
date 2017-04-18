@@ -15,6 +15,7 @@ import java.sql.*;
  */
 
 public class UserDao {
+
     public UserDao(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
     }
