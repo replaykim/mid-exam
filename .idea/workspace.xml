@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d19b120-2709-4664-a308-0298db2ace79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kr.ac.jejunu/JdbcContext.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/userdao/kr/ac/jejunu/AddUserStatementStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/userdao/kr/ac/jejunu/DeleteStatementStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/userdao/kr/ac/jejunu/GetUserStatementStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/AddUserStatementStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/DeleteStatementStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/GetUserStatementStrategy.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/userdao/kr/ac/jejunu/UserDao.class" afterPath="$PROJECT_DIR$/out/production/userdao/kr/ac/jejunu/UserDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/userdao/DaoFactory.xml" afterPath="$PROJECT_DIR$/out/production/userdao/DaoFactory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DaoFactory.xml" afterPath="$PROJECT_DIR$/src/DaoFactory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/AddUserStatementStrategy.java" afterPath="$PROJECT_DIR$/src/kr.ac.jejunu/AddUserStatementStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/DeleteStatementStrategy.java" afterPath="$PROJECT_DIR$/src/kr.ac.jejunu/DeleteStatementStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/GetUserStatementStrategy.java" afterPath="$PROJECT_DIR$/src/kr.ac.jejunu/GetUserStatementStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/StatementStrategy.java" afterPath="$PROJECT_DIR$/src/kr.ac.jejunu/StatementStrategy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java" afterPath="$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java" />
     </list>
     <ignored path="userdao.iws" />
@@ -67,15 +66,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+              <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1118#1119#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1926#1927#0" expanded="true" />
+                <element signature="e#1972#1973#0" expanded="true" />
+                <marker date="1492591544058" expanded="true" signature="590:625" ph="SELECT * FRO... userdata" />
+                <marker date="1492591544058" expanded="true" signature="1067:1102" ph="INSERT INTO userdata... " />
+                <marker date="1492591544058" expanded="true" signature="1648:1681" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -89,51 +91,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2880#2881#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteStatementStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/DeleteStatementStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
-                <marker date="1492590953925" expanded="true" signature="520:553" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddUserStatementStrategy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/AddUserStatementStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <marker date="1492590953950" expanded="true" signature="531:566" ph="INSERT INTO userdata... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetUserStatementStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/GetUserStatementStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <marker date="1492590953851" expanded="true" signature="526:561" ph="SELECT * FRO... userdata" />
               </folding>
             </state>
           </provider>
@@ -202,8 +159,8 @@
         <option value="$PROJECT_DIR$/src/kr.ac.jejunu/AddUserStatementStrategy.java" />
         <option value="$PROJECT_DIR$/src/kr.ac.jejunu/DeleteStatementStrategy.java" />
         <option value="$PROJECT_DIR$/src/kr.ac.jejunu/JdbcContext.java" />
-        <option value="$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java" />
         <option value="$PROJECT_DIR$/src/DaoFactory.xml" />
+        <option value="$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java" />
       </list>
     </option>
   </component>
@@ -852,9 +809,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2017.04.19 at 15h 03m 05s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTest - 2017.04.19 at 15h 15m 11s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
@@ -882,9 +836,12 @@
     <history-entry file="UserDaoTest - 2017.04.19 at 17h 43m 39s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.19 at 17h 45m 49s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16571000" />
+    <option name="totallyTimeSpent" value="16688000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -917,10 +874,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32716927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32716927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2802276" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2802276" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20492867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1043,8 +1000,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <marker date="1492591544058" expanded="true" signature="590:625" ph="SELECT * FRO... userdata" />
+            <marker date="1492591544058" expanded="true" signature="1067:1102" ph="INSERT INTO userdata... " />
+            <marker date="1492591544058" expanded="true" signature="1648:1681" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1073,8 +1033,11 @@
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <marker date="1492591544058" expanded="true" signature="590:625" ph="SELECT * FRO... userdata" />
+            <marker date="1492591544058" expanded="true" signature="1067:1102" ph="INSERT INTO userdata... " />
+            <marker date="1492591544058" expanded="true" signature="1648:1681" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1102,8 +1065,11 @@
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <marker date="1492591544058" expanded="true" signature="590:625" ph="SELECT * FRO... userdata" />
+            <marker date="1492591544058" expanded="true" signature="1067:1102" ph="INSERT INTO userdata... " />
+            <marker date="1492591544058" expanded="true" signature="1648:1681" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1159,8 +1125,11 @@
           <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <marker date="1492591544058" expanded="true" signature="590:625" ph="SELECT * FRO... userdata" />
+            <marker date="1492591544058" expanded="true" signature="1067:1102" ph="INSERT INTO userdata... " />
+            <marker date="1492591544058" expanded="true" signature="1648:1681" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1202,8 +1171,11 @@
           <caret line="127" column="56" lean-forward="false" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <marker date="1492591544058" expanded="true" signature="590:625" ph="SELECT * FRO... userdata" />
+            <marker date="1492591544058" expanded="true" signature="1067:1102" ph="INSERT INTO userdata... " />
+            <marker date="1492591544058" expanded="true" signature="1648:1681" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1277,32 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/GetUserStatementStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <marker date="1492590953851" expanded="true" signature="526:561" ph="SELECT * FRO... userdata" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/DeleteStatementStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <marker date="1492590953925" expanded="true" signature="520:553" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spring-jdbc-4.3.7.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13570">
@@ -1330,27 +1276,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/GetUserStatementStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="248">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/AddUserStatementStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="169">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/DeleteStatementStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="22" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <marker date="1492590953950" expanded="true" signature="531:566" ph="INSERT INTO userdata... " />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <marker date="1492591544058" expanded="true" signature="590:625" ph="SELECT * FRO... userdata" />
+            <marker date="1492591544058" expanded="true" signature="1067:1102" ph="INSERT INTO userdata... " />
+            <marker date="1492591544058" expanded="true" signature="1648:1681" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
