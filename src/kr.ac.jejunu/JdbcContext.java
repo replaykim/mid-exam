@@ -89,6 +89,32 @@ public class JdbcContext {
         }
     }
 
+
+    public User queryForObject(String sql, Object[] params) throws SQLException {
+        StatementStrategy statementStrategy = connection -> {
+            PreparedStatement preparedStatement;
+            preparedStatement = connection.prepareStatement(sql);
+            for (int i = 1; i <= params.length; i++){
+                preparedStatement.setObject(i, params[i-1]);
+            }
+            return preparedStatement;
+        };
+        return jdbcContextWithStatementStrategyForGet(statementStrategy);
+    }
+
+    public void update(String sql, Object[] params) throws SQLException {
+        StatementStrategy statementStrategy = connection -> {
+            PreparedStatement preparedStatement;
+
+            preparedStatement = connection.prepareStatement(sql);
+            for (int i = 1; i <= params.length; i++){
+                preparedStatement.setObject(i, params[i-1]);
+            }
+            return preparedStatement;
+        };
+        jdbcContexWithStatementStrategyForUpdate(statementStrategy);
+    }
+
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
     }

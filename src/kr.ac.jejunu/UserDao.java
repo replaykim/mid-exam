@@ -20,39 +20,23 @@ public class UserDao {
     JdbcContext jdbcContext;
 
     public User get(Long id) throws ClassNotFoundException, SQLException {
-        StatementStrategy statementStrategy = connection -> {
-            PreparedStatement preparedStatement;
-            preparedStatement = connection.prepareStatement("SELECT * FROM userdata WHERE id = ?");
-            preparedStatement.setLong(1, id);
-            return preparedStatement;
-        };
-        return jdbcContext.jdbcContextWithStatementStrategyForGet(statementStrategy);
+        String sql = "SELECT * FROM userdata WHERE id = ?";
+        Object[] params = new Object[]{id};
+        return jdbcContext.queryForObject(sql, params);
     }
 
     public void add(User user) throws ClassNotFoundException, SQLException {
-        StatementStrategy statementStrategy = connection -> {
-            PreparedStatement preparedStatement;
-
-            preparedStatement = connection.prepareStatement("INSERT INTO userdata VALUES (?,?,?)");
-            preparedStatement.setLong(1, user.getId());
-            preparedStatement.setString(2, user.getName());
-            preparedStatement.setString(3,user.getPassword());
-            return preparedStatement;
-        };
-        jdbcContext.jdbcContexWithStatementStrategyForUpdate(statementStrategy);
+        String sql = "INSERT INTO userdata VALUES (?,?,?)";
+        Object[] params = new Object[]{user.getId(), user.getName(), user.getPassword()};
+        jdbcContext.update(sql, params);
     }
 
     public void delete(Long id) throws SQLException {
-        StatementStrategy statementStrategy = connection -> {
-            PreparedStatement preparedStatement;
-            preparedStatement = connection.prepareStatement("DELETE FROM userdata WHERE id = ?");
-            preparedStatement.setLong(1, id);
+        String sql = "DELETE FROM userdata WHERE id = ?";
+        Object[] params = new Object[]{id};
 
-            return preparedStatement;
-        };
-        jdbcContext.jdbcContexWithStatementStrategyForUpdate(statementStrategy);
+        jdbcContext.update(sql, params);
     }
-
 
     public void setJdbcContext(JdbcContext jdbcContext) {
         this.jdbcContext = jdbcContext;
