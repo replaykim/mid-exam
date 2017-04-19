@@ -1,4 +1,6 @@
-package kr.ac.jejunu;
+package kr.ac.halla;
+
+import kr.ac.jejunu.ConnectionMaker;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +9,7 @@ import java.sql.SQLException;
 /**
  * Created by blue on 2017-04-19.
  */
-public class JejuUserDao extends UserDao {
+public class HallaConnectionMaker implements ConnectionMaker {
     @Override
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         {
