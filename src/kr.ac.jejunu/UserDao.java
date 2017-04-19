@@ -14,7 +14,7 @@ import java.sql.*;
  * extract method
  */
 
-public class UserDao {
+public abstract class UserDao {
 
     public User get(Long id) throws ClassNotFoundException, SQLException {
         Connection connection = getConnection();
@@ -47,8 +47,5 @@ public class UserDao {
         connection.close();
     }
 
-    private Connection getConnection() throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql://117.17.102.106:3306/replayDB?characterEncoding=utf-8", "root", "1234");
-    }
+    public abstract Connection getConnection() throws ClassNotFoundException, SQLException ;
 }

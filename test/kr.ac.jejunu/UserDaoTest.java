@@ -1,5 +1,6 @@
 package kr.ac.jejunu;
 
+import kr.ac.halla.HallaUserDao;
 import org.junit.Test;
 
 import java.sql.SQLException;
@@ -15,14 +16,14 @@ import static org.hamcrest.CoreMatchers.*;
 public class UserDaoTest {
 
     @Test
-    public void get() throws SQLException, ClassNotFoundException {
+    public void jejuGet() throws SQLException, ClassNotFoundException {
         // id 를 주면 이름과 비밀번호를 가져온다.
 
         Long id = 1l;
         String name  = "김재현";
         String password = "12334";
 
-        UserDao userDao = new UserDao();
+        UserDao userDao = new JejuUserDao();
 
         User user = userDao.get(id);
 
@@ -33,7 +34,7 @@ public class UserDaoTest {
     }
 
     @Test
-    public void add() throws SQLException, ClassNotFoundException {
+    public void jejuAdd() throws SQLException, ClassNotFoundException {
         Long id = 10l;
         String name = "얍얍얍";
         String password = "12345";
@@ -43,7 +44,46 @@ public class UserDaoTest {
         user.setName(name);
         user.setPassword(password);
 
-        UserDao userDao = new UserDao();
+        UserDao userDao = new JejuUserDao();
+        userDao.add(user);
+
+        User resultUser = userDao.get(id);
+
+        assertThat(id, is(resultUser.getId()));
+        assertThat(name, is(resultUser.getName()));
+        assertThat(password, is(resultUser.getPassword()));
+    }
+
+    @Test
+    public void hallaGet() throws SQLException, ClassNotFoundException {
+        // id 를 주면 이름과 비밀번호를 가져온다.
+
+        Long id = 1l;
+        String name  = "김재현";
+        String password = "12334";
+
+        UserDao userDao = new HallaUserDao();
+
+        User user = userDao.get(id);
+
+        assertThat(id, is(user.getId()));
+        assertThat(name, is(user.getName()));
+        assertThat(password, is(user.getPassword()));
+
+    }
+
+    @Test
+    public void hallaAdd() throws SQLException, ClassNotFoundException {
+        Long id = 10l;
+        String name = "얍얍얍";
+        String password = "12345";
+
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setPassword(password);
+
+        UserDao userDao = new HallaUserDao();
         userDao.add(user);
 
         User resultUser = userDao.get(id);
