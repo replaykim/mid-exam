@@ -28,8 +28,8 @@ public class UserDao {
         try {
             connection = dataSource.getConnection();
 
-            preparedStatement = connection.prepareStatement("select * from userdata where id = ?");
-            preparedStatement.setLong(1, id);
+            StatementStrategy statementStrategy = new GetUserStatementStrategy();
+            preparedStatement = statementStrategy.makeStatement(connection, id);
 
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
@@ -73,10 +73,9 @@ public class UserDao {
         PreparedStatement preparedStatement = null;
         try {
             connection = dataSource.getConnection();
-            preparedStatement = connection.prepareStatement("INSERT INTO userdata VALUES (?,?,?)");
-            preparedStatement.setLong(1, user.getId());
-            preparedStatement.setString(2, user.getName());
-            preparedStatement.setString(3,user.getPassword());
+
+            StatementStrategy statementStrategy = new AddUserStatementStrategy();
+            preparedStatement = statementStrategy.makeStatement(connection, user);
 
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -106,8 +105,8 @@ public class UserDao {
         try {
             connection = dataSource.getConnection();
 
-            preparedStatement = connection.prepareStatement("DELETE FROM userdata WHERE id = ?");
-            preparedStatement.setLong(1, id);
+            StatementStrategy statementStrategy = new DeleteStatementStrategy();
+            preparedStatement = statementStrategy.makeStatement(connection, id);
 
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
