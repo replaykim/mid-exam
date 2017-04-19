@@ -1,10 +1,8 @@
 package kr.ac.jejunu;
 
-import kr.ac.halla.HallaConnectionMaker;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 import java.sql.SQLException;
@@ -60,5 +58,24 @@ public class UserDaoTest {
         assertThat(id, is(resultUser.getId()));
         assertThat(name, is(resultUser.getName()));
         assertThat(password, is(resultUser.getPassword()));
+    }
+
+    @Test
+    public void delete() throws SQLException, ClassNotFoundException {
+        Long id = 12l;
+        String name = "삭제중";
+        String password = "12345";
+
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setPassword(password);
+
+        userDao.add(user);
+        userDao.delete(id);
+
+        User resultUser = userDao.get(id);
+
+        assertThat(resultUser, nullValue());
     }
 }
