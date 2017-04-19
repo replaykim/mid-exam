@@ -8,11 +8,15 @@ import java.sql.SQLException;
  * Created by blue on 2017-04-19.
  */
 public class AddUserStatementStrategy implements StatementStrategy {
+    User user;
+    public AddUserStatementStrategy(User user) {
+        this.user = user;
+    }
+
     @Override
-    public PreparedStatement makeStatement(Connection connection, Object object) throws SQLException {
+    public PreparedStatement makeStatement(Connection connection) throws SQLException {
         PreparedStatement preparedStatement;
 
-        User user = (User) object;
 
         preparedStatement = connection.prepareStatement("INSERT INTO userdata VALUES (?,?,?)");
         preparedStatement.setLong(1, user.getId());
