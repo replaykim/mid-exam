@@ -3,9 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="userDao" class="kr.ac.jejunu.UserDao">
-        <constructor-arg ref="connetionMaker"></constructor-arg>
+        <property name="dataSource" ref="dataSource"></property>
     </bean>
-    <bean id="connetionMaker" class="kr.ac.jejunu.JejuConnectionMaker">
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="username" value="root"></property>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="password" value="1234"></property>
+        <property name="url" value="jdbc:mysql://117.17.102.106:3306/replayDB?characterEncoding=utf-8"></property>
     </bean>
 
 </beans>
