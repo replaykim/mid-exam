@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d19b120-2709-4664-a308-0298db2ace79" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java" afterPath="$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/kr.ac.jejunu/UserDaoTest.java" afterPath="$PROJECT_DIR$/test/kr.ac.jejunu/UserDaoTest.java" />
     </list>
     <ignored path="userdao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,11 +52,11 @@
       <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="105">
+              <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
               <folding>
-                <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-                <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+                <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+                <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
               </folding>
             </state>
           </provider>
@@ -779,7 +779,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8506000" />
+    <option name="totallyTimeSpent" value="9536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
@@ -912,8 +912,8 @@
         <state relative-caret-position="300">
           <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
-            <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-            <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+            <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+            <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
           </folding>
         </state>
       </provider>
@@ -943,8 +943,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-            <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+            <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+            <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
           </folding>
         </state>
       </provider>
@@ -972,8 +972,8 @@
         <state relative-caret-position="750">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-            <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+            <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+            <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
           </folding>
         </state>
       </provider>
@@ -1000,8 +1000,8 @@
         <state relative-caret-position="750">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-            <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+            <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+            <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
           </folding>
         </state>
       </provider>
@@ -1057,8 +1057,8 @@
         <state relative-caret-position="660">
           <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
           <folding>
-            <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-            <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+            <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+            <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
           </folding>
         </state>
       </provider>
@@ -1104,8 +1104,8 @@
         <state relative-caret-position="189">
           <caret line="127" column="56" lean-forward="false" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
           <folding>
-            <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-            <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+            <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+            <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
           </folding>
         </state>
       </provider>
@@ -1139,11 +1139,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kr.ac.jejunu/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="105">
+          <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
           <folding>
-            <marker date="1492648892639" expanded="true" signature="628:663" ph="select * fro... userdata" />
-            <marker date="1492648892639" expanded="true" signature="1452:1487" ph="INSERT INTO userdata... " />
+            <marker date="1492649629872" expanded="true" signature="483:518" ph="select * fro... userdata" />
+            <marker date="1492649629872" expanded="true" signature="1162:1197" ph="INSERT INTO userdata... " />
           </folding>
         </state>
       </provider>
